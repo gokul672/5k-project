@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.heading #title {
+    background-color: #a12391;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.heading .addStudentIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main #container {
+    /* border: 1px solid #000; */
+    padding: 20px;
+}
+
+.inputDataContainer {
+    display: flex;
+    justify-content: center;
+}
+
+main #container .inputDataContainer #personalData {
+    /* border: 1px solid #000; */
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+#personalData #inputTypeOne {
+    /* border: 1px solid #000; */
+    width: 100%;
+}
+
+/* #inputTypeOne label {
+    line-height: 40px;
+    margin-top: 20px;
+} */
+
+#inputTypeOne label input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    /* text-align: center;   */
+    height: 35px;
+    font-size: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#inputTypeOne label input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="file"],
+input[type="date"],
+select,
+textarea {
+    margin-bottom: 15px;
+}
+
+#personalData .dressSize {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#personalData .dressSize label {
+    width: 100%;
+    /* margin: 10px; */
+}
+
+#personalData label textarea {
+    height: 100px;
+    resize: none;
+}
+
+.eventParGrp {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+}
+
+#inputImage {
+    /* display: none; */
+    height: 40px;
+}
+
+.submitContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submitContainer button {
+    background-color: #a12391;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    main #container .inputDataContainer #personalData {
+        width: 100%;
+    }
+    #inputTypeOne label input,
+    select,
+    textarea {
+        height: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    main #container .inputDataContainer #personalData {
+        width: 80%;
+    }
+    #inputTypeOne label input,
+    select,
+    textarea {
+        caret-color: #a12391;
+        height: 40px;
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/UpdateProfile.css" />
+        <link rel="icon" href="images/Academy-Logo.png" />
+        <title>Update Student</title>
+    </head>
+    <body>
+        <header class="heading">
+            <p id="title">4 Dimentions Athletic Academy</p>
+        </header>
+        <div class="add-student-icon">
+            <img
+                src="images/account.png"
+                id="add-student"
+                height="80"
+                width="80"
+            />
+        </div>
+        <article>
+            <div id="container">
+                <div class="inputDataContainer">
+                    <div id="personalDataContainer">
+                        <form method="POST" id="personalData">
+                            <div id="inputTypeOne">
+                                <label id="nameLabel"
+                                    >Name
+                                    <input
+                                        type="text"
+                                        maxlength="25"
+                                        id="nameInput"
+                                        value="$name"
+                                    />
+                                </label>
+                                <label id="ageLabel"
+                                    >Age
+                                    <input
+                                        type="number"
+                                        maxlength="3"
+                                        id="ageInput"
+                                    />
+                                </label>
+                                <label id="genderLabel"
+                                    >Gender
+                                    <select id="genderInput">
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </label>
+                                <label id="mobileLabel"
+                                    >Mobile Number
+                                    <input
+                                        type="tel"
+                                        id="mobileNumber"
+                                        maxlength="13"
+                                /></label>
+                                <label id="fatherLabel"
+                                    >Father's name
+                                    <input type="text" id="fatherName" />
+                                </label>
+                                <label id="motherLabel"
+                                    >Mother's name
+                                    <input type="text" id="motherName" />
+                                </label>
+                            </div>
+                            <div id="inputTypeTwo">
+                                <label id="addressLabel"
+                                    >Address
+                                    <input type="text" id="address" />
+                                </label>
+                                <label id="genderLabel"
+                                    >Enter your Qualification
+                                    <select id="studyInput">
+                                        <option value="School">School</option>
+                                        <option value="College">College</option>
+                                        <option value="Graduated">
+                                            Graduated
+                                        </option>
+                                    </select>
+                                </label>
+                                <label id="schoolLabel"
+                                    >School/College name
+                                    <input type="text" id="schoolName" />
+                                </label>
+                                <label id="aadharLabel"
+                                    >Number
+                                    <input
+                                        type="tel"
+                                        id="aadharNumber"
+                                        maxlength="12"
+                                /></label>
+                                <label id="heightLabel"
+                                    >Height
+                                    <input type="number" id="heightNum" />
+                                </label>
+                                <label id="weightLabel"
+                                    >Weight
+                                    <input type="number" id="weightNum" />
+                                </label>
+                                <label id="EventLabel"
+                                    >Event Participation
+                                    <input type="text" id="eventName" />
+                                </label>
+                                <label id="event-categ"
+                                    >Category
+                                    <select id="eventCateg">
+                                        <option value="Under-20">
+                                            Under-18
+                                        </option>
+                                        <option value="Under-20">
+                                            Under-19
+                                        </option>
+                                        <option value="Under-20">
+                                            Under-20
+                                        </option>
+                                        <option value="20-24">20-24</option>
+                                        <option value="25-29">25-29</option>
+                                        <option value="30-34">30-34</option>
+                                        <option value="35-39">35-39</option>
+                                        <option value="40-44">40-44</option>
+                                        <option value="45-49">45-49</option>
+                                        <option value="50+">50+</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div id="inputTypeThree">
+                                <label id="personalBestLabel"
+                                    >Personal Best
+                                    <input type="text" id="personalBest"
+                                /></label>
+                                <label id="seasonalBestLabel"
+                                    >Seasonal Best
+                                    <input type="text" id="seasonalBest"
+                                /></label>
+                                <label id="OverallBestLabel"
+                                    >Overall Best
+                                    <input type="text" id="overallBest"
+                                /></label>
+                                <label id="extraNotesLabel"
+                                    >Extra Notes
+                                    <textarea id="extraNotes"></textarea>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="submit-container">
+                    <button type="submit" id="submitBtn">Update</button>
+                </div>
+            </div>
+        </article>
+    </body>
+</html>

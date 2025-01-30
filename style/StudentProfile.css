@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+}
+
+.heading {
+    background-color: #a12391;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.heading p {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.heading a img {
+    /* border: 1px solid #000; */
+    vertical-align: middle;
+}
+
+#navbarContainer {
+    border: 1px solid #000;
+    margin: 20px 25px;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+#navbar {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#navList {
+    display: flex;
+    list-style-type: none;
+}
+
+.navItems {
+    text-decoration: none;
+    color: black;
+}
+
+#personalDetailLabel,
+#performanceDetailLabel {
+    width: 100%;
+    text-align: center;
+}
+
+#performanceInputLabel {
+    font-size: 1.2rem;
+    margin: 20px;
+    border-radius: 10px;
+    width: 95%;
+}
+
+#performanceInput {
+    height: 2.5em;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.weeklyInput {
+    border: 1px solid;
+    width: 23%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0 10px;
+    caret-color: #00b4db;
+}
+
+#performanceInput > button {
+    background-color: #a12391;
+    color: white;
+}
+
+#profileImgContainer {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#profileImg {
+    min-width: 150px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#profileImg img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#extraDetail {
+    border: 1px solid #000;
+    min-width: 70%;
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#extraDetail p,
+span {
+    padding: 0 5px;
+}
+
+#profileDetail {
+    border: 1px solid #f4f4f4;
+}
+
+.detailsList {
+    border: 1px solid #000;
+    font-size: 1.2rem;
+    margin: 20px;
+    border-radius: 10px;
+    /* width: 95%; */
+}
+
+.detailsItem {
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+}
+
+.detailsItem p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#weeklyList .detailsItem {
+    padding: 10px 20px;
+}
+
+#deletePerformance {
+    vertical-align: middle;
+    height: 50px;
+}
+
+.detailsItem p:nth-child(1) {
+    width: 60%;
+}
+
+.detailsItem p:nth-child(2) {
+    width: 5%;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.2rem;
+    }
+
+    #backBtn,
+    #updateBtn {
+        height: 40px;
+        width: 40px;
+    }
+
+    #navbar {
+        font-size: 1.2rem;
+    }
+
+    .weeklyInput {
+        width: 23%;
+    }
+
+    #profileImgContainer {
+        flex-direction: row;
+    }
+
+    #profileImg {
+        width: auto;
+        /* margin-bottom: 20px; */
+    }
+
+    #extraDetail {
+        width: 75%;
+        height: auto;
+    }
+
+    .detailsItem > p:nth-child(1) {
+        width: 60%;
+    }
+
+    .detailsItem > p:nth-child(2) {
+        width: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1rem;
+    }
+
+    #backBtn,
+    #updateBtn {
+        height: 30px;
+        width: 30px;
+    }
+
+    #navbar {
+        font-size: 1rem;
+    }
+
+    .weeklyInput {
+        width: 45%;
+    }
+
+    #profileImg {
+        width: 90%;
+    }
+
+    #extraDetail {
+        width: 95%;
+    }
+}

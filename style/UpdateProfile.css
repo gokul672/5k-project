@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+header.heading {
+    background: #00b4db;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-weight: 500;
+}
+
+header.heading #title {
+    font-size: 1.5em;
+}
+
+.add-student-icon {
+    text-align: center;
+    margin: 1em 0;
+    vertical-align: middle;
+}
+
+#container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+label {
+    display: block;
+    margin: 0.5em 0;
+}
+
+/* Flexbox Layout */
+.inputDataContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputDataContainer > div {
+    flex: 1;
+    min-width: 300px;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: end;
+    margin-top: 1em;
+}
+
+#submitBtn {
+    background-color: #00b4db;
+    color: #fff;
+    border: none;
+    padding: 0.75em 2em;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    margin: 2em 0.5em;
+}
+
+#submitBtn:hover {
+    background-color: #0097a7;
+}
+
+#submitBtn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 183, 219, 0.5);
+}
+
+#submitBtn:active {
+    background-color: #00838f;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    header.heading #title {
+        font-size: 1.4em;
+    }
+
+    .add-student-icon img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .inputDataContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .inputDataContainer > div {
+        flex: 1 1 48%; /* 2 items per row with some margin */
+        margin: 1%;
+    }
+
+    #inputTypeOne,
+    #inputTypeTwo,
+    #inputTypeThree {
+        padding: 0;
+    }
+
+    /* Adjust form layout to be more compact */
+    label {
+        font-size: 0.9em;
+    }
+
+    textarea {
+        height: 120px;
+    }
+}
+
+/* For Smaller Devices Like Mobile Phones */
+@media (max-width: 600px) {
+    header.heading #title {
+        font-size: 1.2em;
+    }
+
+    .add-student-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .inputDataContainer > div {
+        flex: 1 1 100%; /* Full width on small screens */
+        margin: 0.5em 0;
+    }
+
+    textarea {
+        height: 80px;
+    }
+}

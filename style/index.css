@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: #f4f4f4;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    background-color: #a12391;
+    color: black;
+    font-size: 1em;
+    padding: 0 20px;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+    font-size: 1.2em;
+}
+
+#login-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 550;
+}
+
+.user-image {
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.academy-name-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    height: 100%;
+    padding-right: 1em;
+    color: antiquewhite;
+    font-weight: 600;
+}
+
+.quote-space {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 4em - 6px); /* Adjust based on header height */
+    padding: 1em;
+}
+
+#Academy-Logo {
+    max-height: 50vh;
+    max-width: 50vw;
+    padding: 1em;
+    /* border: 1px solid black; */
+}
+
+#quote-dialogue {
+    font-size: 1.7em;
+    font-weight: 700;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 4.25%;
+    /* border: 1px solid black; */
+}
+
+.user-image:hover {
+    opacity: 0.8;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        height: 70px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .academy-name-container {
+        font-size: 1em;
+    }
+
+    .quote-space {
+        flex-direction: column;
+    }
+
+    #Academy-Logo {
+        max-height: 30vh;
+        max-width: 80vw;
+    }
+
+    #quote-dialogue {
+        font-size: 1.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 0.8em;
+    }
+
+    .academy-name-container {
+        font-size: 0.8em;
+    }
+
+    #Academy-Logo {
+        max-height: 25vh;
+        max-width: 70vw;
+    }
+
+    #quote-dialogue {
+        font-size: 1.2em;
+    }
+}

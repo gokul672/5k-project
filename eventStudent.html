@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Event Student Selection</title>
+        <link rel="icon" href="images/Academy-Logo.png" />
+        <link rel="stylesheet" href="style/eventStudent.css" />
+    </head>
+
+    <body>
+        <header class="heading">
+            <a href="#" class="backBtn">
+                <img
+                    src="images/arrow_back.png"
+                    alt="back Button"
+                    height="50"
+                    width="50"
+                />
+            </a>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by name..."
+                onkeyup="filterStudents()"
+            />
+        </header>
+
+        <main>
+            <form class="studentListContainer">
+                <div class="studentItem">
+                    <div class="studentDetails">
+                        <p class="listItems">Student name</p>
+                        <p class="listItems">Student ID</p>
+                        <p class="listItems">Category</p>
+                        <input
+                            type="checkbox"
+                            class="selectCheckbox"
+                            name="students[]"
+                            value=""
+                        />
+                    </div>
+                </div>
+                <!-- <p>No records found</p> -->
+                <button type="submit" id="saveBtn">Save</button>
+            </form>
+        </main>
+        <script>
+            function filterStudents() {
+                const searchValue = document
+                    .getElementById("searchInput")
+                    .value.toLowerCase();
+                const studentItems =
+                    document.getElementsByClassName("studentItem");
+                for (let item of studentItems) {
+                    const name = item
+                        .querySelector(".listItems:first-of-type")
+                        .textContent.toLowerCase();
+                    item.style.display = name.includes(searchValue)
+                        ? ""
+                        : "none";
+                }
+            }
+        </script>
+    </body>
+</html>

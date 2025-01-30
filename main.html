@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css" />
+        <link rel="icon" href="images/Academy-Logo.png" />
+        <title>Main Page</title>
+    </head>
+    <body>
+        <header id="header-container">
+            <div id="header-bar">
+                <h1 class="greeting">Welcome</h1>
+                <div class="setting">
+                    <a href="" class="resetPassword"
+                        ><img
+                            src="images/change-password.png"
+                            id="resetPassword"
+                            height="50"
+                            width="50"
+                            style="color: white"
+                    /></a>
+                    <img
+                        src="images/logout.png"
+                        id="logoutImg"
+                        height="50"
+                        width="50"
+                    />
+                </div>
+            </div>
+        </header>
+        <article>
+            <nav class="default-nav">
+                <div id="menu-container">
+                    <div class="menu-el fees-el">
+                        <a href="FeeList.html"
+                            ><span
+                                ><img
+                                    src="/images/fees-paid.png"
+                                    height="60"
+                                    width="60" /></span
+                            >Fees</a
+                        >
+                    </div>
+                    <div class="menu-el list-el">
+                        <a href="StudentList.html"
+                            ><span
+                                ><img
+                                    src="/images/student.png"
+                                    height="60"
+                                    width="60" /></span
+                            >Athelete List</a
+                        >
+                    </div>
+                    <div class="menu-el addstudent-el">
+                        <a href="AddStudent.html"
+                            ><span
+                                ><img
+                                    src="/images/add-user.png"
+                                    height="60"
+                                    width="60" /></span
+                            >Add Athelete</a
+                        >
+                    </div>
+                    <div class="menu-el result-el">
+                        <a href="ResultList.html">
+                            <span
+                                ><img
+                                    src="/images/notepad.png"
+                                    height="60"
+                                    width="60" /></span
+                            >Results
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <h2 id="event">Upcoming Events</h2>
+            <div id="event-container">
+                <div id="event-bar">
+                    <div class="event-rem">
+                        <p id="event-name" class="addingEvent">High Jump</p>
+                        <p id="event-date" class="addingEvent">06-01-2025</p>
+                        <!-- <p id="event-place" class="addingEvent">Teppakulam</p> -->
+                        <a
+                            href="EventDetails.html"
+                            id="showMoreBtn"
+                            class="addingEvent"
+                            >Show More...</a
+                        >
+                        <a href="" id="dltBtn" class="addingEvent"
+                            ><img src="images/delete2.png"
+                        /></a>
+                    </div>
+                    <div class="event-rem">
+                        <p id="event-name" class="addingEvent">long Jump</p>
+                        <p id="event-date" class="addingEvent">06-01-2025</p>
+                        <!-- <p id="event-place" class="addingEvent">Teppakulam</p> -->
+                        <a
+                            href="EventDetails.html"
+                            id="showMoreBtn"
+                            class="addingEvent"
+                            >Show More...</a
+                        >
+                        <a href="" id="dltBtn" class="addingEvent"
+                            ><img src="images/delete2.png"
+                        /></a>
+                    </div>
+                    <div class="event-rem">
+                        <p id="event-name" class="addingEvent">100 Meters</p>
+                        <p id="event-date" class="addingEvent">06-01-2025</p>
+                        <!-- <p id="event-place" class="addingEvent">Teppakulam</p> -->
+                        <a
+                            href="EventDetails.html"
+                            id="showMoreBtn"
+                            class="addingEvent"
+                            >Show More...</a
+                        >
+                        <a href="" id="dltBtn" class="addingEvent"
+                            ><img src="images/delete2.png"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+            <div id="add-event-container">
+                <!-- <form method="post" id="add-input">
+                    <div id="event-place-container">
+                        <input
+                            type="text"
+                            placeholder="Enter Event Name..."
+                            class="eventInput Name"
+                            id="eventName"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Enter event place..."
+                            class="eventInput Place"
+                            id="eventPlace"
+                        />
+                    </div>
+                    <div id="event-details">
+                        <input
+                            type="date"
+                            placeholder="Enter Event Date..."
+                            class="eventInput Date"
+                            id="eventDate"
+                        />
+                        <select id="eventCateg" class="eventInput Categ">
+                            <option value="">Select Category</option>
+                            <option value="Under-12">Under-12</option>
+                            <option value="Under-14">Under-14</option>
+                            <option value="Under-16">Under-16</option>
+                            <option value="Under-18">Under-18</option>
+                            <option value="Under-20">Under-20</option>
+                        </select>
+                    </div>
+                    <div class="confirm-btn-container">
+                        <button id="confirm-btn"><p>CONFIRM</p></button>
+                    </div>
+                </form> -->
+                <div id="add-btn-container">
+                    <a href="AddEvent.html" id="add-btn">Add Event</a>
+                </div>
+            </div>
+        </article>
+        <!-- <script src="/script/main.js"></script> -->
+    </body>
+</html>

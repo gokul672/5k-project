@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/Addstudent.css" />
+        <link rel="icon" href="images/Academy-Logo.png" />
+        <title>Add New Student</title>
+    </head>
+    <body>
+        <header class="heading">
+            <p id="title">4 Dimentions Athletic Academy</p>
+            <div class="addStudentIcon">
+                <img
+                    src="images/add-user.png"
+                    id="add-student"
+                    height="80"
+                    width="80"
+                />
+            </div>
+        </header>
+        <main>
+            <div id="container">
+                <div class="inputDataContainer">
+                    <form method="POST" id="personalData">
+                        <div id="inputTypeOne">
+                            <label id="nameLabel"
+                                >Name
+                                <input
+                                    type="text"
+                                    maxlength="25"
+                                    id="nameInput"
+                                />
+                            </label>
+                            <!-- <label id="ageLabel"
+                                    >Age
+                                    <input
+                                        type="number"
+                                        maxlength="3"
+                                        id="ageInput"
+                                    />
+                                </label> -->
+                            <label id="genderLabel"
+                                >Gender
+                                <select id="genderInput">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </label>
+                            <label id="mobileLabel"
+                                >Mobile Number
+                                <input
+                                    type="tel"
+                                    id="mobileNumber"
+                                    maxlength="13"
+                            /></label>
+                            <label id="dateOfBirthLabel">
+                                Date of Birth
+                                <input type="date" id="dateOfBirth" />
+                            </label>
+                            <label id="fatherLabel"
+                                >Father's name
+                                <input type="text" id="fatherName" />
+                            </label>
+                            <label id="motherLabel"
+                                >Mother's name
+                                <input type="text" id="motherName" />
+                            </label>
+                            <label id="addressLabel"
+                                >Address
+                                <input type="text" id="address" />
+                            </label>
+                            <label id="studyLabel"
+                                >Enter your Qualification
+                                <select id="studyInput">
+                                    <option value="School">School</option>
+                                    <option value="College">College</option>
+                                </select>
+                            </label>
+                            <label id="schoolLabel"
+                                >School/College name
+                                <input type="text" id="schoolName" />
+                            </label>
+                            <label id="StdLabel">
+                                Std / Year Studying
+                                <input type="text" name="stdStudying" />
+                            </label>
+                            <label id="aadharLabel"
+                                >Aadhar Number
+                                <input
+                                    type="tel"
+                                    id="aadharNumber"
+                                    maxlength="12"
+                            /></label>
+                            <label id="umisLabel">
+                                UMIS / EMIS Number
+                                <input
+                                    type="tel"
+                                    id="umisNumber"
+                                    maxlength="12"
+                                />
+                            </label>
+                            <label id="IdLabel"
+                                >TNAA-UID / AFI-ID
+                                <input type="text" id="IdNum" />
+                            </label>
+                            <label id="heightLabel"
+                                >Height
+                                <input type="number" id="heightNum" />
+                            </label>
+                            <label id="weightLabel"
+                                >Weight
+                                <input type="number" id="weightNum" />
+                            </label>
+                            <label id="feeLabel">
+                                Fee Amount
+                                <input type="number" id="feeNum" />
+                            </label>
+                            <div class="dressSize">
+                                <label id="tshirtSize">
+                                    T-Shirt Size
+                                    <select id="tshirtSizeInput">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                        <option value="XXL">XXL</option>
+                                    </select>
+                                </label>
+                                <label id="lowerSize">
+                                    Lower Size
+                                    <select id="lowerSizeInput">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                        <option value="XXL">XXL</option>
+                                    </select>
+                                </label>
+                                <label id="sleevelessSize">
+                                    Sleeveless Size
+                                    <select id="sleevelessSizeInput">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                        <option value="XXL">XXL</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <label id="event-categ"
+                                >Category
+                                <select id="eventCateg">
+                                    <option value="Kids">Kids</option>
+                                    <option value="Junior">Junior</option>
+                                    <option value="Senior">Senior</option>
+                                    <option value="OpenCtg">
+                                        Open Category
+                                    </option>
+                                </select>
+                            </label>
+                            <div class="eventParGrp">
+                                <label id="EventLabel1"
+                                    >Event Participation-1
+                                    <input type="text" id="eventName" />
+                                </label>
+                                <label id="EventLabel2"
+                                    >Event Participation-2
+                                    <input type="text" id="eventName" />
+                                </label>
+                                <!-- </div>
+                            <div id="inputTypeThree"> -->
+                                <label id="personalBestLabel1"
+                                    >Personal Best-1
+                                    <input type="text" id="personalBest"
+                                /></label>
+                                <label id="personalBestLabel2"
+                                    >Personal Best-2
+                                    <input type="text" id="personalBest"
+                                /></label>
+                                <label id="seasonalBestLabel1"
+                                    >Seasonal Best-1
+                                    <input type="text" id="seasonalBest"
+                                /></label>
+                                <label id="seasonalBestLabel2"
+                                    >Seasonal Best-2
+                                    <input type="text" id="seasonalBest"
+                                /></label>
+                            </div>
+                            <label id="inputImage"
+                                >Profile photo<input
+                                    type="file"
+                                    id="profileImage"
+                            /></label>
+                            <label id="extraNotesLabel"
+                                >Extra Notes
+                                <textarea id="extraNotes"></textarea>
+                            </label>
+                        </div>
+                        <div class="submitContainer">
+                            <button type="submit" id="submitBtn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

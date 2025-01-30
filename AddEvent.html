@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Upcoming Events</title>
+        <link rel="stylesheet" href="style/AddEvent.css" />
+        <link rel="icon" type="image/png" src="images/Academy-Logo.png" />
+    </head>
+    <body>
+        <header>
+            <div id="headerSpace">4 Dimensional Athletics Academy</div>
+        </header>
+        <article id="mainSpace">
+            <div class="eventList">
+                <div id="listItem">
+                    <form method="POST">
+                        <table cellspacing="10" cellpadding="0">
+                            <tr>
+                                <td>Event Name:</td>
+                                <td>
+                                    <input
+                                        type="text"
+                                        id="eventName"
+                                        name="eventName"
+                                    />
+                                </td>
+                                <td>Location:</td>
+                                <td>
+                                    <input
+                                        type="text"
+                                        id="eventLocation"
+                                        name="eventLocation"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>From :</td>
+                                <td>
+                                    <input
+                                        type="date"
+                                        id="fromDate"
+                                        name="fromDate"
+                                    />
+                                </td>
+                                <td>To :</td>
+                                <td>
+                                    <input
+                                        type="date"
+                                        id="toDate"
+                                        name="toDate"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Category :</td>
+                                <td colspan="3">
+                                    <select
+                                        id="eventCateg"
+                                        class="eventInput Categ"
+                                    >
+                                        <option value="">
+                                            Select Category
+                                        </option>
+                                        <option value="Under-12">
+                                            Under-12
+                                        </option>
+                                        <option value="Under-14">
+                                            Under-14
+                                        </option>
+                                        <option value="Under-16">
+                                            Under-16
+                                        </option>
+                                        <option value="Under-18">
+                                            Under-18
+                                        </option>
+                                        <option value="Under-20">
+                                            Under-20
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Description :</td>
+                                <td colspan="3">
+                                    <textarea id="descriptionArea"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="buttonSpace">
+                            <button type="submit" id="addEvent">
+                                Add Event
+                            </button>
+                        <!-- <button type="submit" id="addEvent">Add Event</button> -->
+                    </form>
+                </div>
+                <!-- <div id="listItem">
+                    <label
+                        >Event Name:
+                        <input type="text" id="eventName" name="eventName" />
+                    </label>
+
+                    <label
+                        >Location:
+                        <input
+                            type="text"
+                            id="eventLocation"
+                            name="eventLocation"
+                    /></label>
+                    <label
+                        >From:
+                        <input
+                            type="date"
+                            id="fromDate"
+                            name="fromDate"
+                            placeholder="Enter the Starting Date"
+                        />
+                    </label>
+
+                    <label
+                        >To:
+                        <input
+                            type="date"
+                            id="toDate"
+                            name="toDate"
+                            placeholder="Enter the Ending Date"
+                        />
+                    </label>
+
+                    <label
+                        >Category:
+                        <select id="eventCateg" class="eventInput Categ">
+                            <option value="">Select Category</option>
+                            <option value="Under-12">Under-12</option>
+                            <option value="Under-14">Under-14</option>
+                            <option value="Under-16">Under-16</option>
+                            <option value="Under-18">Under-18</option>
+                            <option value="Under-20">Under-20</option>
+                        </select>
+                    </label>
+                    <label
+                        >Description:
+                        <textarea
+                            id="eventDesc"
+                            name="eventDesc"
+                            spellcheck="false"
+                        ></textarea>
+                    </label>
+                </div> -->
+            </div>
+        </article>
+    </body>
+</html>

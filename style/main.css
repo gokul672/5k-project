@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 600; */
+}
+
+body {
+    background: #f4f4f4;
+}
+
+#header-container {
+    /* border: 1px solid #000; */
+    height: auto;
+    color: #fff;
+    background-color: #a12391;
+}
+
+.greeting {
+    /* font-weight: 500; */
+    font-size: 1.8rem;
+}
+
+.setting {
+    /* border: 1px solid #000; */
+    display: flex;
+    gap: 20px;
+}
+
+.setting > img,
+.resetPassword > img {
+    /* border: 1px solid #000; */
+    vertical-align: middle;
+}
+
+#header-bar {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+#menu-container {
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    text-align: center;
+    gap: 10px;
+}
+
+.menu-el {
+    width: 100%;
+}
+
+span {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.menu-el > a {
+    /* border: 1px solid #000; */
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#event {
+    padding: 10px;
+    text-align: center;
+}
+
+#event-container {
+    /* border: 1px solid #000; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#event-bar {
+    /* border: 2px solid #000; */
+    padding: 5px 0;
+    width: 92%;
+    border-radius: 10px;
+    /* margin: 10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* .addingEvent {
+    border: 1px solid #000;...
+    width: 100%;
+}
+
+#dltBtn {
+    border: none;
+    background-color: transparent;
+    height: auto;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+} */
+
+/* .event-rem {
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2rem;
+} */
+
+.event-rem {
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.event-rem .addingEvent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid #000; */
+    font-size: 1.2rem;
+}
+
+#dltBtn {
+    border: none;
+    background-color: transparent;
+    height: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#dltImg {
+    vertical-align: middle;
+    text-align: center;
+}
+
+#add-event-container {
+    /* border: 1px solid #000; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+}
+
+#add-input {
+    /* border: 1px solid #000; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    /* padding: 10px; */
+}
+
+#event-place-container {
+    /* border: 1px solid #000; */
+    /* font-weight: 100; */
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: 5px;
+}
+
+.eventInput {
+    width: 50%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#event-details {
+    /* border: 1px solid #000; */
+    width: 100%;
+    /* height: 40px; */
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    margin: 5px;
+}
+
+.confirm-btn-container {
+    /* border: 1px solid #000; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin: 5px;
+}
+
+#confirm-btn {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(0, 180, 219);
+    color: white;
+}
+
+#add-btn-container {
+    /* border: 2px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: #a12391;
+    /* width: 110px; */
+    /* height: 100%; */
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    border-radius: 10px;
+}
+
+#add-btn {
+    border: 1px solid #a12391;
+    /* width: 100%; */
+    /* height: 75px; */
+    font-size: 1.2rem;
+    /* border-radius: 50%; */
+    background-color: #a12391;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+#show-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: rgb(0, 180, 219);
+    /* width: 110px; */
+    /* height: 100%; */
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    border-radius: 10px;
+}
+
+/* Tablet Specific Styles */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .greeting {
+        font-size: 1.6rem;
+    }
+
+    #header-bar {
+        padding: 10px 15px;
+    }
+
+    #menu-container {
+        gap: 15px;
+    }
+
+    .menu-el > a {
+        font-size: 1rem;
+    }
+}
+
+/* For Small Screens like Mobile Phones */
+@media (max-width: 600px) {
+    .greeting {
+        font-size: 1.4rem;
+    }
+
+    #header-bar {
+        padding: 10px 10px;
+    }
+
+    #menu-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-el {
+        width: 100%;
+    }
+
+    .menu-el > a {
+        font-size: 1rem;
+    }
+
+    .eventInput {
+        width: 100%;
+    }
+
+    #add-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+}

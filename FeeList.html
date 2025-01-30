@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fee List</title>
+        <link rel="stylesheet" href="style/FeeList.css" />
+        <link rel="icon" href="images/Academy-Logo.png" />
+    </head>
+
+    <body>
+        <header class="heading">
+            <a href="main.php" class="backBtn">
+                <img
+                    src="images/arrow_back.png"
+                    alt="back Button"
+                    height="50"
+                    width="50"
+                />
+            </a>
+            <form method="GET" action="">
+                <input
+                    type="text"
+                    name="search"
+                    id="searchBox"
+                    placeholder="Search..."
+                    value="<?php echo htmlspecialchars($searchValue); ?>"
+                />
+            </form>
+        </header>
+        <div id="container">
+            <div id="listContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php if ($result->num_rows > 0): ?>
+                        <?php while ($row = $result->fetch_assoc()): ?>
+                        <tr>
+                            <td><?php echo $row['id']; ?></td>
+                            <td><?php echo $row['usname']; ?></td>
+                            <td>
+                                <?php echo ucfirst($row['payment_status']); ?>
+                            </td>
+                            <td>
+                                <?php echo $row['datee'] ? $row['datee'] : 'N/A'; ?>
+                            </td>
+                            <td>
+                                <?php if ($row['payment_status'] == 'unpaid'): ?>
+                                <form action="pay.php" method="POST">
+                                    <input
+                                        type="hidden"
+                                        name="id"
+                                        value="<?php echo $row['id']; ?>"
+                                    />
+                                    <button type="submit" class="payBtn">
+                                        Pay
+                                    </button>
+                                </form>
+                                <?php else: ?>
+                                <span class="paidOption">Paid</span>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                        <?php endwhile; ?>
+                        <?php else: ?>
+                        <tr>
+                            <td colspan="5">No students found</td>
+                        </tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="js/FeeList.js"></script>
+    </body>
+</html>

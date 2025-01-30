@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.heading {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: #00b4db;
+    color: white;
+}
+
+#header-wrapper {
+    padding: 5px;
+    display: flex;
+}
+
+#listContainer {
+    padding: 10px;
+}
+
+.header-content {
+    /* border: 1px solid #000; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+#OptionContainer {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+
+.options {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#unPaidList {
+    padding: 10px 20px;
+    /* border: 1px solid #000; */
+}
+
+.unPaidListItem {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2rem;
+    gap: 10px;
+    margin: 0 0 10px 0;
+}
+
+.ListItems {
+    /* border: 1px solid #000; */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unPaidListItem > img {
+    width: 60px;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.confirmBtnContainer {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 30%;
+}
+
+.unpaidBtn {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 0 15px;
+    background-color: rgb(0, 180, 219, 0.5);
+    color: white;
+    height: 100%;
+}
+
+.unpaidBtn > a {
+    color: white;
+    text-decoration: none;
+}
+
+/*.confirmBtnContainer {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paidBtn,
+.unpaidBtn {
+    border: 1px solid;
+    background-color: rgb(0, 180, 219, 0.5);
+    color: white;
+    font-weight: 500;
+    width: 80px;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 1rem;
+} */
